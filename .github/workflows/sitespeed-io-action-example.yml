@@ -18,4 +18,4 @@ jobs:
           docker buildx install
           docker buildx build --load --platform linux/amd64 -t sitespeedio/sitespeed.io .
       - name: running sitespeed.io container with arguments and optional Docker options
-        run: docker run -v "$(pwd):/sitespeed.io" sitespeedio/sitespeed.io https://www.sitespeed.io --budget.configPath .github/budget.json -n 1 
+        run: docker run -v "$(pwd):/sitespeed.io" sitespeedio/sitespeed.io https://www.ikea.cn/cn/zh/ --budget.configPath .github/budget.json -n 1 
