@@ -1,8 +1,5 @@
 name: sitespeed.io action example
-on:
-  push:
-    branches:
-    - main
+on: workflow_dispatch
 jobs:
   run-sitespeed:
     runs-on: ubuntu-latest
